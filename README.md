@@ -1,2 +1,12 @@
 # Traffic-Flow-Optimization
 Traffic Flow Optimization and Congestion Management
+
+Idea Brief :
+At each road, a camera is directed to monitor traffic flow, with a typical intersection housing four cameras, while the feed from existing CCTV cameras may also be utilized. Hence, our system integrates robust traffic signal detection technology and real-time data analytics to dynamically enhance signal timings in response to current traffic conditions. A sophisticated machine learning model, trained to predict the optimal green light duration, utilizes the live camera feeds for analysis. The estimated signal time is then relayed to the signal control panel for implementation. Additionally, our system uploads images to Bottleneck Detection ML after a short interval, identifying potential road obstructions or parked vehicles. To maintain a smooth traffic flow and enable movement across all intersection roads, predefined upper and lower limits for green signal duration are established. Moreover, an Intermediate hub is strategically positioned at each multi-traffic signal junction, allowing centralized control of all signals through LoRa technology to ensure uninterrupted operation.
+
+
+Tech stack :
+The backend database utilized is Firebase, complemented by a client-server architecture. The core application, written in Python, operates on computers located within the control center. Communication between the junction and the control center is facilitated by LoRa technology. To access live feeds or provide notifications to officials, a straightforward API Gateway is employed, granting access to all pertinent data.
+
+
+The solution integrates cutting-edge technologies such as surveillance cameras and image processing to identify bottlenecks at junctions, including capturing number plate details of parked vehicles. Automated alerts swiftly notify relevant authorities in real-time, enabling prompt intervention. Data analytics offer valuable insights into factors contributing to congestion and traffic flow reduction, empowering proactive and coordinated efforts among local authorities to effectively address bottlenecks. Utilizing LoRa (Long Range Communication) ensures dependable and uninterrupted data transfer with the nearest Control Centre, bypassing reliance on the Internet. Additionally, a specialized feature is incorporated to manage emergency situations, facilitating seamless passage for ambulances or fire trucks by automatically turning the relevant signal green.
